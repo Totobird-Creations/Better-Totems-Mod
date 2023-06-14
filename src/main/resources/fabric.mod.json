@@ -14,7 +14,7 @@
 	},
 	"license": "MIT",
 	"icon": "assets/bettertotems/icon.png",
-	"environment": "*",
+	"environment": "server",
 	"entrypoints": {
 		"main": [
 			"net.totobirdcreations.bettertotems.Mod"
