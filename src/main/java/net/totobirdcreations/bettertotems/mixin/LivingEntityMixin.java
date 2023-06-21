@@ -55,7 +55,7 @@ public abstract class LivingEntityMixin implements ILivingEntityMixin {
 		if (this.hasVoidLevitation) {
 			if (! self.hasStatusEffect(StatusEffects.LEVITATION)) {
 				this.hasVoidLevitation = false;
-			} else if (self.getY() >= (double) self.world.getBottomY()) {
+			} else if (self.getY() >= (double) self.getWorld().getBottomY()) {
 				self.removeStatusEffect(StatusEffects.LEVITATION);
 				self.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, -1, 127, true, true, true));
 				this.hasVoidSlowFalling = true;
